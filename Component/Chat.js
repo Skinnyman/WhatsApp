@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View ,TouchableOpacity,Image} from 'react-native'
 import React from 'react'
 
-const Chat = ({data,navigation}) => {
+const Chat = ({data}) => {
   return (
     <View>
-            <TouchableOpacity onPress={() => navigation.navigate('Message')}>
+            <TouchableOpacity >
           <View style={{flexDirection:'row',marginTop:19}}>
               <Image
               source={data.Pic}

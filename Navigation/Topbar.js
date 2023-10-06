@@ -19,8 +19,10 @@ const Topbar = () => {
                   screenOptions={{
                     tabBarShowLabel:false,
                     tabBarLabelStyle: { fontSize: 12,color:'#fff', },
-                    tabBarItemStyle: { width: 103,paddingTop:19,height:50,right:33 },
+                    tabBarItemStyle: { width: 99,paddingTop:19,height:50,right:30, },
                     tabBarStyle: { backgroundColor: '#0e806a' },
+                    tabBarIndicatorStyle:{ backgroundColor:'#fff',left:-19}
+                    
                   }}
             >
             <Tab.Screen name="Community" component={CommunityScreen} 
@@ -31,13 +33,13 @@ const Topbar = () => {
               color={focused ? '#fff' : '#fff'}
               /> )}}
             />
-            <Tab.Screen name="Chat" component={ChatScreen} 
+            <Tab.Screen name="Chats" component={ChatScreen} 
             options={{ tabBarShowLabel:true }}
             />
-            <Tab.Screen name="status" component={StatusScreen} 
+            <Tab.Screen name="updates" component={StatusScreen} 
             options={{ tabBarShowLabel:true }}
             />
-            <Tab.Screen name="call" component={CallScreen} 
+            <Tab.Screen name="calls" component={CallScreen} 
             options={{ tabBarShowLabel:true }}
             />
             </Tab.Navigator>

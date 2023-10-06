@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Status from '../Component/Status'
 
 const StatusScreen = () => {
   return (
     <View>
-      <Text>StatusScreen</Text>
+       <Status/>
     </View>
   )
 }
 
 export default StatusScreen
 
-const styles = StyleSheet.create({})
